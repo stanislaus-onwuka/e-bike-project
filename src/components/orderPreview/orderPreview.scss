@@ -1,0 +1,90 @@
+.order-preview-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 382.2px;
+
+    .order-preview-lottie{
+        max-width: 242px;
+        margin: 2rem 1rem;
+    }
+
+    .order-preview{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .bike-name{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            color: #233348;
+            mix-blend-mode: normal;
+        }
+
+        .bike-img{
+            align-self: center;
+            max-width: 250px;
+
+            &:nth-child(2){
+                margin-top: 1rem;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .price-details-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #C2CFE0;
+        padding: 1.2rem 0.3rem 0.6rem 0.3rem;
+
+        .price-details{
+            .title{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #7D7987;
+                mix-blend-mode: normal;
+                margin-bottom: 0.5rem;
+            }
+
+            .price{
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 25px;
+                color: #233348;
+                mix-blend-mode: normal;
+            }
+        }
+
+        .order-btn{
+            padding: 0.85rem 2rem;
+            background: linear-gradient(180deg, rgba(255, 189, 55, 0.58) 0%, #FFBD37 100%);
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #233348;
+            font-family: 'Mulish', sans-serif;
+            transition: all 0.3s;
+
+            &:hover{
+                background: linear-gradient(180deg, rgba(230, 169, 48, 0.58) 0%, #e4a933 100%);
+            }
+        }
+    }
+}

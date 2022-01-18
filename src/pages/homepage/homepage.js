@@ -53,7 +53,7 @@ const Homepage = () => {
                 </div>
             </header>
             <main>
-                <section className="sliders-container">
+                <section className="bikes-container">
                     <div className="bikes-slider-container">
                         <div className="bikes-slider">
                             {
@@ -62,13 +62,13 @@ const Homepage = () => {
                                 })
                             }
                         </div>
-                        <div className="slider-controls">
-                            <div className="left-scroll-arrow">
+                    </div>
+                    <div className="slider-controls">
+                        <div className="left-scroll-arrow">
 
-                            </div>
-                            <div className="right-scroll-arrow">
+                        </div>
+                        <div className="right-scroll-arrow">
 
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -90,7 +90,7 @@ const Homepage = () => {
                         <div className="learn-more-description">
                             <h3 className="description-title">Hybrid Bikes</h3>
                             <p className="description-subtitle">Dummy Text progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-                            <Link to="/type/hybrid-bikes" className="learn-more-btn"></Link>
+                            <Link to="/type/hybrid-bikes" className="learn-more-btn">Learn More</Link>
                         </div>
                     </div>
                 </section>

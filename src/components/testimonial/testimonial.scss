@@ -1,0 +1,55 @@
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.5rem auto;
+    width: 75%;
+
+    .user-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .user-img{
+            max-width: 140px;
+
+
+            img{
+                width: 100%;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+
+            }
+        }
+
+        .user-details{
+            margin: 0.5rem 0;
+            text-align: center;
+            .name{
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 48px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+            }
+
+            .occupation{
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 48px;
+                color: rgba(255, 255, 255, 0.85);
+            }
+        }
+    }
+
+    .remark{
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.9);
+        mix-blend-mode: normal;
+        width: 55%;
+        margin: 2.5rem 3rem;
+
+    }
+}

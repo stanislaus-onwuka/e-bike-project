@@ -1,0 +1,206 @@
+.homepage{
+   .homepage-header{
+        background-image: url('../../assets/png/hero-bg-element.png');
+        background-position: 0 130px;
+        background-repeat: no-repeat;
+
+       .hero-container{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           align-items: center;
+           margin: 1rem auto;
+           width: 90%;
+
+
+           .hero{
+               max-width: 430px;
+
+               .hero-text{
+                   .hero-title{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 48px;
+                        line-height: 56px;
+                        color: #233348;                 
+                        mix-blend-mode: normal;
+                   }
+                   .hero-subtitle{
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 21px;
+                        line-height: 32px;
+                        color: #7D7987;                       
+                        mix-blend-mode: normal;
+                        margin: 2rem 0;
+                   }
+               }
+           }
+       }
+   } 
+
+   main{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+
+       .bikes-container{
+           display: flex;
+           flex-direction: column;
+           background-image: url('../../assets/png/bike-preview-bg-element.png');
+           background-position: -100px -100px;
+           background-size: auto;
+           background-repeat: no-repeat;
+           padding: 0.5rem 0;
+
+           .bikes-slider-container{
+                align-self: flex-end;
+                width: 90%;
+
+               .bikes-slider{
+                   display: flex;
+                   flex-direction: row;
+                   overflow-x: scroll;
+               }
+           }
+       }
+
+       .other-bikes-container{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            width: 90%;
+            margin: 8rem 0;
+
+            .other-bikes-slider-container{
+                .other-bikes-slider-title{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 56px;
+                    color: #233348;
+                    mix-blend-mode: normal;
+                }
+
+                .other-bikes-slider{
+                    display: flex;
+                    flex-direction: row;
+                    overflow-x: scroll;
+                    padding: 2rem 1rem;
+                }
+            }
+
+            .selected-bike-info{
+                display: flex;
+                flex-direction: row;
+                margin: 4rem 0 2rem 0;
+                background-image: url('../../assets/png/hybrid-bg-element.png');
+                background-position: right top;
+                background-repeat: no-repeat;
+                padding: 3rem 0 4rem 0;
+
+                .product-container{
+                    max-width: 382.2px;
+                }
+
+                .learn-more-description{
+                    margin: 4rem ;
+                    width: 40%;
+
+                    .description-title{
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 56px;
+                        color: #233348;
+                        mix-blend-mode: normal;
+                        margin-top: 2rem;
+                    }
+
+                    .description-subtitle{
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #7D7987;
+                        mix-blend-mode: normal;
+                        margin: 2.5rem 0;
+                    }
+
+                    .learn-more-btn{
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 60px;
+                        color: #FCB72B;
+                        mix-blend-mode: normal;
+                        border: 1.4px solid #FCB72B;
+                        border-radius: 55px;
+                        padding: 0.8rem 2rem;
+                        text-decoration: none;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover{
+                            background: #FCB72B;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+       }
+
+       .testimonials-container{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           background-image: url('../../assets/png/testimonial-bg-element.png');
+           background-position: right bottom;
+           background-repeat: no-repeat;
+
+            .testimonials-slider-container{
+                display: flex;
+                flex-direction: column;
+                padding: 5rem 2rem 2rem 2rem;
+                background-color: #FCB72B;
+                background-image: url('../../assets/png/testimonial-slider-bg-element.png');
+                background-position: 100% -20%;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                width: 75%;
+
+                .testimonials-slider-title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    align-self: center;
+                    text-align: center;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        background-color: #FFFFFF;
+                        border-radius: 6px;
+                        height: 2px;
+                        width: 20%;
+                        max-width: 56px;
+                        margin: 0.4rem auto;
+                    }
+                }
+
+                .testimonials-slider{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                }
+            }
+
+            .testimonials-slider-controls{
+                margin: 2rem 0 9rem 0;
+
+            }
+       }
+   }
+}

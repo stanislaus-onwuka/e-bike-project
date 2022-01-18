@@ -13,7 +13,7 @@ const OrderPreview = ({ bikeInfo }) => {
     }
 
     return (
-        <div className="order-preview-container">
+        <div className="order-preview-container">       
             {
                 animated ? 
                 <div className="order-preview-lottie">
@@ -33,7 +33,7 @@ const OrderPreview = ({ bikeInfo }) => {
             }
             <div className="price-details-container">
                 <div className="price-details">
-                    <h5 className="title">Price:</h5>
+                    <h5 className="title">Price</h5>
                     <h4 className="price">{`$ ${price}`}</h4>
                 </div>
                 <button className="order-btn">Order</button>

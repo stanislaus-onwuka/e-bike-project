@@ -1,0 +1,44 @@
+.type-preview-container{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin-right: 2.3rem;
+    cursor: pointer;
+
+
+    .type-preview-img{
+        box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        max-width: 227px;
+        padding: 1rem 2rem;
+        transition: 0.3s;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .type-preview-name{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #233348;
+        mix-blend-mode: normal;
+        text-align: center;
+        align-self: center;
+        margin: 1rem 0;
+        transition: 0.3s;
+    }
+
+    &:hover{
+        .type-preview-img{
+            box-shadow: 10px 24px 54px rgba(0, 0, 0, 0);
+            border: 2px solid #FCB72B;
+        }
+
+        .type-preview-name{
+            color: #FCB72B;
+        }
+    }
+}
