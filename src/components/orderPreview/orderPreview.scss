@@ -12,6 +12,7 @@
     .order-preview-lottie{
         max-width: 242px;
         margin: 2rem 1rem;
+        align-self: center;
     }
 
     .order-preview{
@@ -29,7 +30,7 @@
 
         .bike-img{
             align-self: center;
-            max-width: 250px;
+            max-width: 270px;
 
             &:nth-child(2){
                 margin-top: 1rem;

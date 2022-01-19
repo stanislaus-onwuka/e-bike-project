@@ -11,7 +11,7 @@ export const bikesData = [
     {
         id: 2,
         name: "Brampoton eBike Kit",
-        bikeImg: "https://res.cloudinary.com/ecx/image/upload/q_auto:good/v1642520265/eBike/csm_ghost-bikes-e-square-trekking-universal-u-nightblue-blue-45_503566db8a_1_rwtweq.png",
+        bikeImg: "https://res.cloudinary.com/ecx/image/upload/q_auto:good/v1642520264/eBike/PHO_BIKE_PERS_REVO_RAY-21-CrossRay-E-FS-6-0-oblique-web__SALL__AEPI__V1_1_hdufr5.png",
         price: 750.00,
         animated: false
     },

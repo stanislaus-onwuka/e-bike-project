@@ -1,9 +1,27 @@
+@import '../../utils/breakpoints-library/breakpoints.scss';
+
 .testimonial{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 1.5rem auto;
     width: 75%;
+
+    
+    @include media("<phone"){
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+
+    @include media(">=phone","<=custom-view-2"){
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    @include media(">=custom-view-2","<=desktop"){
+        width: 100%;
+    }
 
     .user-data{
         display: flex;
@@ -30,6 +48,17 @@
                 line-height: 48px;
                 color: #FFFFFF;
                 mix-blend-mode: normal;
+
+                @include media("<phone"){
+                    font-size: 18px;
+                    line-height: 40px;
+                    
+                }
+            
+                @include media(">=phone","<=custom-view-2"){
+                    font-size: 22px;
+                    line-height: 45px;
+                }
             }
 
             .occupation{
@@ -37,6 +66,18 @@
                 font-size: 18px;
                 line-height: 48px;
                 color: rgba(255, 255, 255, 0.85);
+                
+                @include media("<phone"){
+                    font-size: 16px;
+                    line-height: 40px;
+                    
+                }
+            
+                @include media(">=phone","<=custom-view-2"){
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+            
             }
         }
     }
@@ -50,5 +91,20 @@
         width: 57%;
         margin: 2.5rem 3rem;
 
+        @include media("<phone"){
+            width: 95%;
+            margin: 0.5rem;
+            font-size: 16px;
+            line-height: 25px;
+            
+        }
+    
+        @include media(">=phone","<=custom-view-2"){
+            margin: 1.5rem 1rem;
+            width: 95%;
+            font-size: 17px;
+            line-height: 30px;
+        }
+    
     }
 }

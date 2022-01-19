@@ -96,11 +96,13 @@ const Homepage = () => {
                     <div className="other-bikes-slider-container">
                         <h3 className="other-bikes-slider-title">Other Type Of Bikes</h3>
                         <div className="other-bikes-slider">
-                            {
-                                bikeTypes.map((bikeType) => {
-                                    return <TypePreview key={bikeType.id} previewInfo={bikeType} />
-                                })
-                            }
+                            <div className="main-slider">
+                                {
+                                    bikeTypes.map((bikeType) => {
+                                        return <TypePreview key={bikeType.id} previewInfo={bikeType} />
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                     <div className="selected-bike-info">

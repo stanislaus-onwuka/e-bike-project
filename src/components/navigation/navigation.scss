@@ -1,9 +1,21 @@
+@import '../../utils/breakpoints-library/breakpoints.scss';
+
 .navigation{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 2.5rem 0.5rem;
+
+    @include media("<phone"){
+        justify-content: space-between;
+        padding: 2.5rem 1rem;
+    }
+
+    @include media(">=phone","<custom-view-1"){
+        justify-content: space-between;
+        padding: 2.5rem 1.5rem;
+    }
 
     .logo{
         max-width: 116px;
@@ -17,6 +29,14 @@
         display: flex;
         flex-direction: row;
         list-style: none;
+
+        @include media("<phone"){
+            display: none;
+        }
+
+        @include media(">=phone","<custom-view-1"){
+            display: none;
+        }
 
         .menu-item{
             margin: 0 0.8rem;
@@ -42,9 +62,89 @@
 
     .mobile-menu-btn{
         display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @include media("<phone"){
+            display: flex;
+        }
+
+        @include media(">=phone","<custom-view-1"){
+            display: flex;
+        }
+
     }
 
     .mobile-menu-container{
         display: none;
+        position: fixed;
+        right: 0;
+        width: 50%;
+        min-width: 300px;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+        // justify-content: space-around;
+        background: #FFE8B9;
+        box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.171);
+        padding: 1rem;
+        transform: translateX(1000px);
+        transition: 0.4s;
+
+
+        @include media("<phone"){
+            display: flex;
+        }
+
+        @include media(">=phone","<custom-view-1"){
+            display: flex;
+        }
+
+        .close-menu-btn{
+            background: none;
+            border: 0;
+            align-self: flex-start;
+            cursor: pointer;
+            margin: 1rem;
+        }
+
+        .mobile-menu{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 2rem 1rem;
+
+            .menu-item{
+                margin: 1.2rem 0.8rem;
+                
+                a{
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #7d7987;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    padding: 0.2rem;
+                    margin: 0 0.2rem;
+    
+                    &:hover{
+                        font-weight: bold;
+                        color: #233348;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .copyright{
+            color: #000000b6;
+            font-weight: 300;
+            margin: 2.5rem 1rem 0 1rem;
+        }
     }
+}
+
+.show-menu{
+    transform: translateX(0) !important;
 }
