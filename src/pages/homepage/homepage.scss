@@ -10,11 +10,11 @@
            justify-content: space-around;
            align-items: center;
            margin: 1rem auto;
-           width: 90%;
+           width: 85%;
 
 
            .hero{
-               max-width: 430px;
+               max-width: 420px;
 
                .hero-text{
                    .hero-title{
@@ -51,16 +51,46 @@
            background-position: -100px -100px;
            background-size: auto;
            background-repeat: no-repeat;
-           padding: 0.5rem 0;
+           padding: 0.5rem 0 1rem 0;
 
            .bikes-slider-container{
                 align-self: flex-end;
-                width: 90%;
+                width: 87%;
 
                .bikes-slider{
                    display: flex;
                    flex-direction: row;
                    overflow-x: scroll;
+                   scroll-behavior: smooth;
+                   padding-bottom: 1.5rem ;
+
+                   &::-webkit-scrollbar {
+                        background: transparent;
+                        -webkit-appearance: none;
+                        width: 0;
+                        height: 0;
+                   }
+               }
+           }
+
+           .slider-controls{
+               align-self: flex-end;
+               margin: 1rem 2rem;
+
+               .left-scroll-arrow,
+               .right-scroll-arrow{
+                    background: linear-gradient(180deg, rgba(255, 189, 55, 0.58) 0%, #FFBD37 100%);
+                    border-radius: 100px;
+                    padding: 0.8rem 0.65rem;
+                    margin: 0 0.3rem;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover{
+                        background: linear-gradient(180deg, rgba(255, 188, 55, 0.342) 0%, #ffbc37bd 100%);
+
+                    }
                }
            }
        }
@@ -69,7 +99,7 @@
             display: flex;
             flex-direction: column;
             align-self: flex-end;
-            width: 90%;
+            width: 85%;
             margin: 8rem 0;
 
             .other-bikes-slider-container{
@@ -87,6 +117,13 @@
                     flex-direction: row;
                     overflow-x: scroll;
                     padding: 2rem 1rem;
+                    
+                   &::-webkit-scrollbar {
+                        background: transparent;
+                        -webkit-appearance: none;
+                        width: 0;
+                        height: 0;
+                    }
                 }
             }
 
@@ -113,7 +150,7 @@
                         line-height: 56px;
                         color: #233348;
                         mix-blend-mode: normal;
-                        margin-top: 2rem;
+                        margin-top: 1.5rem;
                     }
 
                     .description-subtitle{
@@ -159,13 +196,13 @@
             .testimonials-slider-container{
                 display: flex;
                 flex-direction: column;
-                padding: 5rem 2rem 2rem 2rem;
+                padding: 5rem 2rem 1.3rem 2rem;
                 background-color: #FCB72B;
                 background-image: url('../../assets/png/testimonial-slider-bg-element.png');
                 background-position: 100% -20%;
                 background-repeat: no-repeat;
                 border-radius: 10px;
-                width: 75%;
+                width: 70%;
 
                 .testimonials-slider-title{
                     font-style: normal;

@@ -9,7 +9,7 @@
     .search-icon{
         max-width: 20px;
         align-self: center;
-        margin-top: 0.4rem;
+        margin: 0.4rem 0 0 0.3rem;
 
         img{
             width: 100%;
@@ -32,6 +32,7 @@
             color: #C2CFE0;
             font-family: 'Mulish', sans-serif;
             border: none;
+            width: 90%;
 
             &:focus-within{
                 outline: 0.2px dotted rgba(0, 0, 0, 0.733);
