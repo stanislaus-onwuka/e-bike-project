@@ -43,3 +43,14 @@
         }
     }
 }
+
+.selected-type{
+    .type-preview-img{
+        box-shadow: 10px 24px 54px rgba(0, 0, 0, 0);
+        border: 2px solid #FCB72B;
+    }
+
+    .type-preview-name{
+        color: #FCB72B;
+    }
+}

@@ -99,6 +99,19 @@
            .bikes-slider-container{
                 align-self: flex-end;
                 width: 87%;
+                position: relative;
+
+                &::after{
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    content:"";
+                    width: 30%;
+                    height: 100%;
+                    background: rgb(255,255,255);
+                    background: linear-gradient(90deg, rgba(255,255,255,0.22172619047619047) 0%, rgba(255,255,255,0.804359243697479) 14%, rgba(255,255,255,0.865983893557423) 38%, rgba(255,255,255,1) 100%);
+                }
 
                .bikes-slider{
                    display: flex;
@@ -118,7 +131,7 @@
 
            .slider-controls{
                align-self: flex-end;
-               margin: 1rem 2rem;
+               margin: 1% 12% 0 0;
 
                .left-scroll-arrow,
                .right-scroll-arrow{
@@ -158,6 +171,19 @@
                 .other-bikes-slider{
                     align-self: flex-end;
                     width: 98%;
+                    position: relative;
+
+                    &::after{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        content:"";
+                        width: 20%;
+                        height: 100%;
+                        background: rgb(255,255,255);
+                        background: linear-gradient(90deg, rgba(255,255,255,0.22172619047619047) 0%, rgba(255,255,255,0.865983893557423) 29%, rgba(255,255,255,1) 100%);
+                    }
     
                     .main-slider{
                         display: flex;
@@ -307,6 +333,22 @@
                     align-self: center;
                     text-align: center;
 
+                    @include media("<phone"){
+                        font-size: 20px;
+                        line-height: 32px;  
+                    }
+                
+                    @include media(">=phone","<=custom-view-2"){
+                        font-size: 26px;
+                        line-height: 40px;
+    
+                    }
+    
+                    @include media(">=custom-view-2","<=desktop"){
+                        font-size: 32px;
+                        line-height: 42px;
+                    }
+
                     &:after {
                         content: "";
                         display: block;
@@ -329,9 +371,30 @@
             }
 
             .testimonials-slider-controls{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 margin: 2rem 0 9rem 0;
 
+                .progress-indicator{
+                    margin: 0 3rem;
+                }
+
+                .slide-right-btn{
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover{
+                        transform: translateX(5px);
+                    }
+                }
             }
        }
    }
+}
+
+// Conditionals
+
+.disable-btn{
+    background: #FFE8B9 !important;
 }

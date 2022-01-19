@@ -1,11 +1,11 @@
 import './typePreview.scss';
 
-const TypePreview = ({ previewInfo }) => {
+const TypePreview = ({ previewInfo, selectedType, setSelectedType }) => {
     
     const { type } = previewInfo;
 
     return (
-        <div className="type-preview-container">
+        <div className={`type-preview-container ${selectedType === type ? "selected-type" : ""}`} onClick={()=>setSelectedType(type)}>
             <div className="type-preview-img">
                 <img src={require('../../assets/png/bike-type.png')} alt={`${type}`} />
             </div>
