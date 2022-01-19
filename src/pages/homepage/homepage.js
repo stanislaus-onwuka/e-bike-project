@@ -68,7 +68,7 @@ const Homepage = () => {
             <header className='homepage-header'>
                 <Navigation/>
                 <div className="hero-container">
-                    <div className="hero">
+                    <div className="hero" data-aos="fade-right">
                         <div className="hero-text">
                             <h2 className="hero-title">Your Bike Electric Update</h2>
                             <p className="hero-subtitle">Dummy text progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
@@ -148,14 +148,14 @@ const Homepage = () => {
                             <OrderPreview bikeInfo={selectedProduct} />
                         </div>
                         <div className="learn-more-description">
-                            <h3 className="description-title">{ selectedProduct.name }</h3>
-                            <p className="description-subtitle">Dummy Text progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-                            <Link to="/type/hybrid-bikes" className="learn-more-btn">Learn More</Link>
+                            <h3 className="description-title" data-aos="fade-left">{ selectedProduct.name }</h3>
+                            <p className="description-subtitle" data-aos="fade-left" data-aos-delay="100">Dummy Text progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+                            <Link to="/type/hybrid-bikes" className="learn-more-btn" data-aos="fade-left" data-aos-delay="300">Learn More</Link>
                         </div>
                     </div>
                 </section>
                 <section className="testimonials-container">
-                    <div className="testimonials-slider-container">
+                    <div className="testimonials-slider-container" data-aos="fade-up">
                         <h3 className="testimonials-slider-title">What our customer are saying</h3>
                         <div className="testimonials-slider">
                             {

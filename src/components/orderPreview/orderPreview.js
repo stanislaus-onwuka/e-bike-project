@@ -13,7 +13,7 @@ const OrderPreview = ({ bikeInfo }) => {
     }
 
     return (
-        <div className="order-preview-container">       
+        <div className="order-preview-container" data-aos="zoom-in" data-aos-offset="100">       
             {
                 animated ? 
                 <div className="order-preview-lottie">
