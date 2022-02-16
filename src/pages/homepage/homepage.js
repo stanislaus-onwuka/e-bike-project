@@ -148,8 +148,8 @@ const Homepage = () => {
                             <OrderPreview bikeInfo={selectedProduct} />
                         </div>
                         <div className="learn-more-description">
-                            <h3 className="description-title" data-aos="fade-left">{ selectedProduct.name }</h3>
-                            <p className="description-subtitle" data-aos="fade-left" data-aos-delay="100">Dummy Text progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+                            <h3 className="description-title" data-aos="fade-up">{ selectedProduct.name }</h3>
+                            <p className="description-subtitle" data-aos="fade-down" data-aos-delay="100">Dummy Text progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
                             <Link to="/type/hybrid-bikes" className="learn-more-btn" data-aos="fade-left" data-aos-delay="300">Learn More</Link>
                         </div>
                     </div>

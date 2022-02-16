@@ -21,7 +21,7 @@ const Navigation = () => {
     const [mobileMenuStatus, setMobileMenuStatus] = useState(false);
 
     return (
-        <nav className="navigation" data-aos="fade-down">
+        <nav className="navigation">
             <Link to="/" className="logo">
                 <img src={Logo} alt="eBike Logo" />
             </Link>

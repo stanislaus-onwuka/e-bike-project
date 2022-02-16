@@ -82,7 +82,7 @@
         right: 0;
         width: 50%;
         min-width: 300px;
-        bottom: 0;
+        // bottom: 0;
         top: 0;
         height: 100%;
         flex-direction: column;
@@ -92,14 +92,17 @@
         padding: 1rem;
         transform: translateX(1000px);
         transition: 0.4s;
+        z-index: 3;
 
 
         @include media("<phone"){
-            display: flex;
+            display: block;
+
         }
 
         @include media(">=phone","<custom-view-1"){
-            display: flex;
+            display: block;
+
         }
 
         .close-menu-btn{
