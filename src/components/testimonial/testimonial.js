@@ -1,11 +1,11 @@
 import './testimonial.scss';
 
-const Testimonial = ({ testimonialInfo }) => {
+const Testimonial = ({ testimonialInfo,className }) => {
     
-    const { firstName,lastName,occupation,remark } = testimonialInfo;
+    const { id,firstName,lastName,occupation,remark } = testimonialInfo;
 
     return (
-        <div className="testimonial">
+        <div className={className} key={id}>
             <div className="user-data">
                 <div className="user-img">
                     <img src={require('../../assets/png/user.png')} alt={ `${firstName} ${lastName}` }/>

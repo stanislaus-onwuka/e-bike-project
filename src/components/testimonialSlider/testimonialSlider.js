@@ -9,7 +9,7 @@ const TestimonialSlider = () => {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
-    const nextSlide = () => {
+    const prevSlide = () => {
         if(slideIndex !== testimonialsData.length){
             setSlideIndex(slideIndex + 1)
         } 
@@ -18,7 +18,7 @@ const TestimonialSlider = () => {
         }
     }
 
-    const prevSlide = () => {
+    const nextSlide = () => {
         if(slideIndex !== 1){
             setSlideIndex(slideIndex - 1)
         }
@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
                 <div className="testimonials-slider">
                     {
                         testimonialsData.map((testimonial) => {
-                            return <Testimonial key={testimonial.id} testimonialInfo={testimonial} slideIndex={ slideIndex  }/>
+                            return <Testimonial key={testimonial.id} testimonialInfo={testimonial} className={ slideIndex === testimonial.id ? "testimonial active-testimonial" : "testimonial" }/>
                         })
                     }
                 </div>
@@ -48,10 +48,10 @@ const TestimonialSlider = () => {
                     <img src={ChevronLeftIcon} alt="left btn"/>
                 </button>
                 <div className="progress-indicator">
-                    {Array.from({length: 5}).map((item, index) => (
+                    {Array.from(testimonialsData.map(testimonial=> testimonial.id)).map((item) => (
                         <div 
-                            onClick={() => moveDot(index + 1)}
-                            className={slideIndex === index + 1 ? "dot active" : "dot"}
+                            onClick={() => moveDot(item)}
+                            className={slideIndex === item ? "dot active" : "dot"}
                         ></div>
                     ))}
                 </div>

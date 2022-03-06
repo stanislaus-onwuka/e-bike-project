@@ -62,12 +62,20 @@ export const testimonialsData = [
         occupation: "Pro Cycler",
         remark: "Dummy Text patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
     },
-    // {
-    //     id: 2,
-    //     photo: "",
-    //     firstName: "Ed",
-    //     lastName: "Gate",
-    //     occupation: "Pro Cycler",
-    //     remark: "Dummy Text patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
-    // }
+    {
+        id: 2,
+        photo: "",
+        firstName: "Ed",
+        lastName: "Gate",
+        occupation: "Pro Cycler",
+        remark: "Dummy Text patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+    },
+    {
+        id: 3,
+        photo: "",
+        firstName: "Edd",
+        lastName: "Gate",
+        occupation: "Pro Cycler",
+        remark: "Dummy Text patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+    }
 ]

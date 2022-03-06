@@ -7,11 +7,9 @@ import Footer from '../../components/footer/footer'
 import Searchbar from '../../components/searchbar/searchbar'
 import OrderPreview from '../../components/orderPreview/orderPreview'
 import TypePreview from '../../components/typePreview/typePreview'
-import Testimonial from '../../components/testimonial/testimonial'
-import IndicatorIcon from '../../assets/svg/indicator.svg'
-import ChevronRightIcon from '../../assets/svg/chevron-orange.svg'
-import { bikesData, testimonialsData, bikeTypes } from '../../data'
+import { bikesData, bikeTypes } from '../../data'
 import './homepage.scss'
+import TestimonialSlider from '../../components/testimonialSlider/testimonialSlider'
 
 const Homepage = () => {
     // Bike preview section
@@ -154,29 +152,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="testimonials-container">
-                    <div className="testimonials-slider-container" data-aos="fade-up">
-                        <h3 className="testimonials-slider-title">What our customer are saying</h3>
-                        <div className="testimonials-slider">
-                            {
-                                testimonialsData.map((testimonial) => {
-                                    return <Testimonial key={testimonial.id} testimonialInfo={ testimonial }/>
-                                })
-                            }
-                        </div>
-                    </div>
-                    <div className="testimonials-slider-controls">
-                        <div className="slide-left-btn">
-
-                        </div>
-                        <div className="progress-indicator">
-                            <img src={IndicatorIcon} alt="indicator"/>
-                        </div>
-                        <div className="slide-right-btn">
-                            <img src={ChevronRightIcon} alt="right btn"/>
-                        </div>
-                    </div>
-                </section>
+                <TestimonialSlider/>
             </main>
             <Footer/>
         </div>
